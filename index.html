@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>English App</title>
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <table>
+    <tr class="topContainer">
+        <td class="topRow">
+            <p class="textTodo">Phrase a traduire</p>
+            <p id="theQuestion" >?</p>
+            </td>
+        <td class="buttonCell">
+            <button type="button" onclick="myQuestion()">Nouvelle phrase</button>
+        </td>
+    </tr>
+    <tr class="midContainer">
+        <td>
+            <form class="myForm">
+                <p>Ta traduction</p>
+                <input class="myTranslation" type="text">
+            </form>
+        </td>
+        <td>
+            <button type="reset">Recommencer</button>
+        </td>
+    </tr>   
+    <tr class="bottomContainer">
+        <td>
+            <p>Reponse</p>
+            <p id="theAnswer">?</p>
+        </td>
+        <td>
+            <button type="button" onclick="myAnswer()">Voir la reponse</button>
+        </td>
+    </tr>
+    </table>
+</body>
+</html>
