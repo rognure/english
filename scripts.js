@@ -19,3 +19,14 @@ function myAnswer(){
     var answerWord = answers[answerIndex];
     document.getElementById("theAnswer").textContent = answerWord;
 }
+
+function reset(){
+    document.getElementById("myTranslation").value = "";
+}
+
+function autoGrow (oField) {
+    oField = document.getElementById("myTranslation");
+    if (oField.scrollHeight > oField.clientHeight) {
+      oField.style.height = oField.scrollHeight + "px";
+    }
+  }

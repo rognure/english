@@ -8,23 +8,26 @@ body, html, .bodyDiv{
 }
 
 .textTodo{
-font-size: 16px;
+font-size: 20px;
 }
 
 td{
 }
 
 table{
-    margin-top: 50px;
+    height: 100%;
     width: 80%;
     white-space: nowrap;
     vertical-align: middle;
     margin: auto;
-    margin-top: 20px;
     border-collapse: collapse;
     background-color: #19194d; 
 }
 
+textarea{
+    word-wrap: normal;
+    line-height: 20px;
+}
 button{
     font-size: 14px;
     height: 50px;
@@ -33,6 +36,7 @@ button{
     border-radius: 24px;
     outline: none;
     font-weight: bolder;
+    margin: 10px;
 }
 
 #theQuestion{
@@ -49,7 +53,6 @@ button{
 
 #theAnswer{
     color: #000;
-    line-height: 50px;
     display: inline-block;
     width: 75%;
     height: 50px;
@@ -59,9 +62,8 @@ button{
     border-radius: 24px;
 }
 
-.myTranslation{
+#myTranslation{
     color: #000;
-    line-height: 50px;
     display: inline-block;
     width: 75%;
     height: 50px;
@@ -83,15 +85,18 @@ p{
 }
 
 .topContainer{
+    height: 33%;
     text-align: center;
 
 }
 
 .midContainer{
+    height: 33%;
     text-align: center;
     background-color: #9f9fdf;
 }
 
 .bottomContainer{
+    height: 33%;
     text-align: center;
 }

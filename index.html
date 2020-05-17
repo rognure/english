@@ -11,7 +11,7 @@
     <tr class="topContainer">
         <td class="topRow">
             <p class="textTodo">Phrase a traduire</p>
-            <p id="theQuestion" >?</p>
+            <p id="theQuestion" ></p>
             </td>
         <td class="buttonCell">
             <button type="button" onclick="myQuestion()">Nouvelle phrase</button>
@@ -19,19 +19,19 @@
     </tr>
     <tr class="midContainer">
         <td>
-            <form class="myForm">
-                <p>Ta traduction</p>
-                <input class="myTranslation" type="text">
+            <form id="myForm">
+                <p class="textTodo">Ta traduction</p>
+                <textarea form="myForm" id="myTranslation" type="text" onkeyup="autoGrow()"></textarea>
             </form>
         </td>
         <td>
-            <button type="reset">Recommencer</button>
+            <button type="button" onclick="reset()">Recommencer</button>
         </td>
     </tr>   
     <tr class="bottomContainer">
         <td>
-            <p>Reponse</p>
-            <p id="theAnswer">?</p>
+            <p class="textTodo">Reponse</p>
+            <p id="theAnswer"></p>
         </td>
         <td>
             <button type="button" onclick="myAnswer()">Voir la reponse</button>
