@@ -1,42 +1,40 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
-    <title>English App</title>
-    <script src="scripts.js"></script>
-</head>
-<body>
-    <table>
-    <tr class="topContainer">
-        <td class="topRow">
-            <p class="textTodo">Phrase a traduire</p>
-            <p id="theQuestion" ></p>
-            </td>
-        <td class="buttonCell">
-            <button type="button" onclick="myQuestion()">Nouvelle phrase</button>
-        </td>
-    </tr>
-    <tr class="midContainer">
-        <td>
-            <form id="myForm">
-                <p class="textTodo">Ta traduction</p>
-                <textarea form="myForm" id="myTranslation" type="text" onkeyup="autoGrow()"></textarea>
-            </form>
-        </td>
-        <td>
-            <button type="button" onclick="reset()">Recommencer</button>
-        </td>
-    </tr>   
-    <tr class="bottomContainer">
-        <td>
-            <p class="textTodo">Reponse</p>
-            <p id="theAnswer"></p>
-        </td>
-        <td>
-            <button type="button" onclick="myAnswer()">Voir la reponse</button>
-        </td>
-    </tr>
-    </table>
-</body>
+    <head<>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles2.css">
+        <title>English App</title>
+        <script src="scripts2.js"></script>
+    </head>
+    <body>
+        <div class="topWrapper">
+            <div class="topContainer">
+                <p class="textTop">Phrase a traduire</p>
+                <p id="theQuestion" ></p>
+                <div class="topButContainer">
+                    <button class="topButton" type="button" onclick="myQuestion(), reset()">Nouvelle phrase</button>
+                </div>        
+            </div>
+        </div>
+        <div class="bottomWrapper">
+        <div class="bottomContainer">
+            <div class="topContainer">
+                <p class="textTop">Ta traduction</p>
+                <div id="myTranslation" contenteditable="true"></div>
+                <div class="topButContainer">
+                    <button class="topButton" type="button" onclick="reset()">Recommencer</button>
+                </div>        
+            </div>
+        </div>
+        <div class="bottomContainer">
+            <div class="topContainer">
+                <p class="textTop">Reponse</p>
+                <p id="theAnswer" ></p>
+                <div class="topButContainer">
+                    <button class="topButton" type="button" onclick="myAnswer()">Voir la reponse</button>
+                </div>        
+            </div>
+        </div>
+        </div>
+    </body>
 </html>

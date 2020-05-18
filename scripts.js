@@ -1,15 +1,17 @@
 const toTranslate = [
     "Patate", 
     "Chat", 
-    "Chien"];
+    "Chien",
+"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."];
 
-const answers = ["Potato", "Cat", "Dog"];
+const answers = ["Potato", "Cat", "Dog", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy asd f a sdfa sdfa sdf a sdf."];
 
 var randomNumber = randomQuestion;
 
 function myQuestion(){
     const randomQuestion = toTranslate[Math.floor(Math.random() * toTranslate.length)];
     document.getElementById("theQuestion").textContent = randomQuestion;
+    document.getElementById("myTranslation").value = "";
     document.getElementById("theAnswer").textContent = "";
 }
 
@@ -21,7 +23,7 @@ function myAnswer(){
 }
 
 function reset(){
-    document.getElementById("myTranslation").value = "";
+    document.getElementById("myTranslation").textContent = "";
 }
 
 function autoGrow (oField) {
